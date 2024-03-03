@@ -23,7 +23,8 @@ const CartItem = () => {
               <option value="3">Qty:3</option>
             </select>
           </div>
-          <div className="item-delete"></div>
+          <div className="item-actions-divider">|</div>
+          <div className="item-delete">Delete</div>
         </div>
       </div>
       <div className="CartItem-price">$239.00</div>
