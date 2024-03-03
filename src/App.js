@@ -7,7 +7,6 @@ import data from "./Data";
 
 function App() {
   const [cartItems, setCartItems] = useState(data);
-  console.log("Cart items", data);
   return (
     <div className="App">
       <Header title="Amazon Cart" />
