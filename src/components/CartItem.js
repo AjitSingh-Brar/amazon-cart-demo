@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartItem.css";
 
-const CartItem = ({ index, item, changeItemQuantity }) => {
+const CartItem = ({ index, item, changeItemQuantity, deleteItem }) => {
   return (
     <div className="CartItem">
       <div className="CartItem-image">
@@ -30,7 +30,9 @@ const CartItem = ({ index, item, changeItemQuantity }) => {
             </select>
           </div>
           <div className="item-actions-divider">|</div>
-          <div className="item-delete">Delete</div>
+          <div className="item-delete" onClick={deleteItem.bind(this, index)}>
+            Delete
+          </div>
         </div>
       </div>
       <div className="CartItem-price">{item.price}</div>
